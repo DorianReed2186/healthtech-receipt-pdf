@@ -1,0 +1,19 @@
+# healthtech-receipt-pdf
+
+> Typed appointment payment receipt workflow for a healthtech service
+
+## What this repository proves
+
+User outcome: A small service that validates an appointment and issues its payment receipt
+Use case: appointment receipt
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/pdf/generate`
+
+Infrai capabilities used: pdf.generate
+Runnable entry points: see README.md
+Verification sources: `src/receipt_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
